@@ -355,8 +355,8 @@ if (NOT PYTHON AND NOT MATLAB AND NOT R_LANG)
             RUNTIME       DESTINATION "${CMAKE_INSTALL_BINDIR}")
 
     # Create demo executable (linked to static library)
-    add_executable (osqp_demo ${PROJECT_SOURCE_DIR}/examples/osqp_demo.c)
-    target_link_libraries (osqp_demo osqpstatic)
+    # add_executable (osqp_demo ${PROJECT_SOURCE_DIR}/examples/osqp_demo.c)
+    # target_link_libraries (osqp_demo osqpstatic)
 
 endif (NOT PYTHON AND NOT MATLAB AND NOT R_LANG)
 
